@@ -8,6 +8,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-static": "next build && next export -o build",
+    "deploy-prd": "vercel --prod",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "start": "next start",
     "eslint:init": "eslint --init",
     "lint": "eslint ./ --fix"
